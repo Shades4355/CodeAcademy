@@ -1,0 +1,13 @@
+to run C++ code you first need to compile it with:
+g++ [file name]
+
+then you run the compiled code with
+./a.out
+
+example:
+g++ hello.cpp  //no visible return
+./a.out        //"Hello World!"
+
+You can change the a.out file name
+g++ hello.cpp -o hello
+./hello
