@@ -1,0 +1,12 @@
+
+Compile-time errors:
+  Errors found by the compiler.
+
+Link-time errors:
+  Errors found by the linker when it is trying to combine object files into an executable program.
+
+Run-time errors:
+  Errors found by checks in a running program.
+
+Logic errors:
+  Errors found by the programmer looking for the causes of erroneous results.
