@@ -9,15 +9,12 @@ int main() {
   int iterations;
 
   while (i < 10) {
-    std::cout << i;
-    square = i;
-    iterations = 1;
+    std::cout << i << " ";
 
-    while (iterations < i) {
-      square *= i;
-      iterations++;
-    }
+    square = i * i;
+
     std::cout << square << "\n";
+    i++;
   }
 
 }
