@@ -4,26 +4,23 @@ public class Newsfeed {
 
   String[] topics = {"Opinion", "Tech", "Science", "Health"};
   int[] views = {0, 0, 0, 0};
-  String[] favoriteArticles = new String[10];
 
   public Newsfeed(){
-    // Initialize favoriteArticles here:
 
   }
 
-  public void setFavoriteArticle(int favoriteIndex, String newArticle){
-    // Add newArticle to favoriteArticles:
-    favoriteArticles[favoriteIndex] = newArticle;
+  public String[] getTopics(){
+    return topics;
+  }
 
+  public int getNumTopics(){
+    return topics.length;
   }
 
   public static void main(String[] args){
     Newsfeed sampleFeed = new Newsfeed();
 
-    sampleFeed.setFavoriteArticle(2, "Humans: Exterminate Or Not?");
-    sampleFeed.setFavoriteArticle(3, "Organic Eye Implants");
-    sampleFeed.setFavoriteArticle(0, "Oil News");
+    System.out.println("The number of topics is "+ sampleFeed.getNumTopics());
 
-    System.out.println(Arrays.toString(sampleFeed.favoriteArticles));
   }
 }
